@@ -1,0 +1,35 @@
+
+<!-- <div class="comp"> -->
+<div class="stocks">
+    <mat-icon (click)="goBack()" >arrow_back</mat-icon>
+    <!-- <div class="header1">MEGA CONTEST</div> -->
+    <header><br>
+        <h1>MEGA CONTEST</h1>
+    </header>
+    <br>
+    <div>
+        <div class="budget">
+            <p style="float: left; vertical-align: middle;" (click)="openBottomSheet()">Budget Left : {{budgetLeft}}</p>
+            <p style="float: right;">Picks:{{picks}}</p>
+        </div>
+        <mat-progress-bar mode="determinate" value="40" style="bottom: 3px;position: fixed;"></mat-progress-bar>
+        <!-- <button mat-button (click)="openDialog()">Open dialog</button> -->
+
+        <div *ngFor="let i of data">
+            <div class="stock"  style="background-image: url('../../assets/image/Capture.PNG');" (click)="openDialog(i)">
+                <div class="inside"> <p>{{i.name}}</p><p>{{i.value}}</p></div>
+            </div>
+            <!-- <div  class="float1" style="background-image: linear-gradient(45deg, #5bd68e, #553c9a);;width: 100%;height:20px"></div> -->
+            <!-- <div sty;e="height:20px"></div> -->
+        </div>
+    </div>
+    <br>
+    <br>
+    <div>
+        <button mat-raised-button (click)="Submit()" style="margin-left: 45%;; margin-bottom: 20%;">Submit</button>
+    </div>
+    <div>
+       
+        
+    </div>
+</div>

@@ -1,0 +1,20 @@
+<div>
+    <mat-accordion>
+        <div  style="display: grid;" *ngFor="let i of data">
+            <mat-expansion-panel hideToggle>
+            <mat-expansion-panel-header>
+                <mat-panel-title style="height: 30px;width: 100%; color: brown;" >
+                {{i.name}}
+                </mat-panel-title>
+                <!-- <mat-panel-description>
+                This is a summary of the content
+                </mat-panel-description> -->
+            </mat-expansion-panel-header>
+            <p *ngIf="i.stocks!=null" style="font-size: large;">For {{i.date}}</p>
+            <p *ngFor="let x of i.stocks">
+                {{x}}
+            </p>
+            </mat-expansion-panel>
+        </div>
+    </mat-accordion>
+</div>

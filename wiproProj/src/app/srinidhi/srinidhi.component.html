@@ -1,0 +1,21 @@
+<header><h1><div style="text-align: center;font-size: large;">{{data.name}}</div>
+</h1>
+</header>
+<div >
+<mat-card class="crd1" *ngFor="let i of datas">
+    <mat-card-header >
+      <mat-card-title >{{i.name}}</mat-card-title>
+      <mat-card-subtitle>{{i.cost}}</mat-card-subtitle>
+      <mat-card-subtitle>{{i.up}}</mat-card-subtitle>
+    </mat-card-header>
+</mat-card>
+</div>
+
+<!-- <div *ngIf="!yes"> 
+    <mat-card class="crd1" *ngFor="let i of dataas">
+        <mat-card-header >
+          <mat-card-title >{{i.BAJFINANCE}}</mat-card-title><mat-card-subtitle>{{i.cost}}</mat-card-subtitle>
+          <mat-card-subtitle>{{i.up}}</mat-card-subtitle> -->
+        <!-- </mat-card-header>
+    </mat-card>
+    </div> --> 

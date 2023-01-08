@@ -1,0 +1,30 @@
+.button-row{
+    text-align: center;
+    font-size: 35px;
+}
+.button1,.button2{
+    margin-top: 15%;
+    margin-bottom: 15%;
+    background-color: #6378e4;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 35px;
+}
+.button3{
+    background-color: #6378e4;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin-left: 40%;
+    margin-top: 10%;
+}
+p{
+    font-size: 35px;
+    text-align: center;
+}

@@ -1,0 +1,42 @@
+.crd1{
+    background-image: linear-gradient(to right,rgb(235, 179, 213) ,rgb(247, 245, 246));
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 30px;
+    margin-bottom: 5px;
+}
+header h1 {
+    font-size: 60px;
+    font-weight: 600;
+    background-image: linear-gradient(45deg, #553c9a, #ee4b2b);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+  }
+
+.comp{
+    height: 100%;
+    background-image: radial-gradient(ellipse, #553c9a, #5bd68e);
+
+}
+.icon{
+    /* top:20%; */
+    bottom:50%;
+}
+
+.example-box:active {
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+                0 8px 10px 1px rgba(0, 0, 0, 0.14),
+                0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  }
+.some{
+    top:30%;
+    align-items: left;
+    transform: scale(2);
+    vertical-align: middle;
+}
+.mat-icon {
+    vertical-align: middle;
+}

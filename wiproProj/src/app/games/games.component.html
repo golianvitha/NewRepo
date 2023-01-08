@@ -1,0 +1,18 @@
+
+<div class="comp">
+  <mat-icon (click)="goBack()" >arrow_back</mat-icon>
+  <header><br>
+    <h1>GAMES</h1>
+</header>
+<div  class="example-box"  >
+  <mat-icon style=" transform: scale(2);" (click)="openBottomSheet()">info</mat-icon>
+</div>
+
+<mat-card class="crd1" *ngFor="let i of data">
+    <mat-card-header (click)="goToStocks()">
+      <mat-card-title>{{i.name}}</mat-card-title>
+      <mat-card-subtitle>{{i.win}}</mat-card-subtitle>
+      <mat-card-content>{{i.entries}}</mat-card-content>
+    </mat-card-header>
+</mat-card>
+</div>
