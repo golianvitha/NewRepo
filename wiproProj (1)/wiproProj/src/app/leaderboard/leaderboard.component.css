@@ -1,0 +1,10 @@
+table {
+    width: 80%;
+    margin: 20px auto;
+  }
+  .example-container {
+    height: 99%;
+    overflow: auto;
+  }
+
+  

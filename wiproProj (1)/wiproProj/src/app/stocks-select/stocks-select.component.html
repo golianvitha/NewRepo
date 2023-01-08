@@ -1,0 +1,27 @@
+<div class="stocks">
+    <div class="header1">MEGA CONTEST</div>
+    <br>
+    <div>
+        <!-- <button mat-button (click)="openDialog()">Open dialog</button> -->
+
+        <div *ngFor="let i of data">
+            <div class="stock"  style="background-image: url('../../assets/images/Capture.PNG');" (click)="openDialog()">
+                <div class="inside"> <p>{{i.name}}</p></div>
+            </div>
+            <div  class="float1" style="background-color: white;width: 100%;height:20px"></div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- <div>
+        <button mat-raised-button (click)="openBottomSheet()">Open file</button>
+    </div> -->
+    <div>
+        <div class="budget">
+            <div><button (click)="Submit()">Submit</button></div>
+            <p style="float: left;" (click)="openBottomSheet()">Budget Left : {{budgetLeft}}</p>
+            <p style="float: right;">Picks:{{picks}}</p>
+        </div>
+        <mat-progress-bar mode="determinate" value="40" style="bottom: 3px;position: fixed;"></mat-progress-bar>
+    </div>
+</div>
